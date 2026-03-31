@@ -107,6 +107,18 @@ canvas#three-canvas { position:fixed; inset:0; z-index:0; pointer-events:none; o
 .project-card h3 { font-size:1.8rem; margin:0 0 1rem; z-index:1; position:relative; }
 .project-card p { font-size:1rem; line-height:1.6; color:rgba(255,255,255,0.7); z-index:1; position:relative; }
 
+/* Timeline / Resume */
+.timeline { display:grid; gap:2rem; }
+.timeline-section { padding:2rem; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); border-radius:16px; }
+.timeline-section h3 { margin:0 0 1.5rem; font-size:1.6rem; color:var(--accent3); }
+.timeline-item { padding:1.2rem 0; border-top:1px solid rgba(255,255,255,0.08); }
+.timeline-item:first-of-type { border-top:none; padding-top:0; }
+.timeline-item h4 { margin:0 0 0.4rem; font-size:1.2rem; color:rgba(255,255,255,0.95); }
+.timeline-meta { font-size:0.95rem; color:rgba(255,255,255,0.6); margin-bottom:0.6rem; }
+.timeline-list { list-style:none; display:grid; gap:0.5rem; padding:0; margin:0; }
+.timeline-list li { position:relative; padding-left:1.1rem; color:rgba(255,255,255,0.75); line-height:1.6; }
+.timeline-list li::before { content:'-'; position:absolute; left:0; color:var(--accent3); }
+
 /* Skills */
 .skills-section { background:linear-gradient(to bottom, transparent, rgba(123,47,247,0.05), transparent); }
 .skills-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:3rem; }
